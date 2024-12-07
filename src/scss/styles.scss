@@ -27,6 +27,8 @@ $legacy: false;
   // Crea los archivos adicionales que necesites (uno por componente)
 @import "components/buttons";
 @import "components/menus";
+@import "components/header";
+@import "components/footer";
 
 // Theme (colors and fonts)
 @import "theme/typography";
