@@ -1,0 +1,14 @@
+.btn {
+    color: white;
+    background-color: var(--theme-color);
+    padding: 1rem 1rem;
+    border: 0;
+    border-radius: .5rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+
+    &-secondary {
+        background-color: transparent;
+        color: var(--theme-color);
+    }
+}
