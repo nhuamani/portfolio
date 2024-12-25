@@ -1,0 +1,73 @@
+.skill-full {
+    width: 100%;
+    background-color: #101010;
+    padding: 1rem;
+}
+
+.skill {
+    margin: auto;
+    max-width: 1200px;
+
+    & article {
+
+        & section {
+            display: flex;
+            flex-direction: column;
+
+            h3 {
+                font-size: var(--heading-font);
+                font-size: 1rem;
+                color: #bfc1c9;
+                font-weight: 500;
+            }
+            
+            & div {
+                display: flex;
+                overflow: hidden;
+                overflow-x: visible;
+                
+                @media screen and (min-width: 768px) {
+                    overflow: visible;
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    gap: 1rem;
+                }
+
+                @media screen and (min-width: 992px) {
+                    grid-template-columns: repeat(5, 1fr);
+                }
+
+                @media screen and (min-width: 1200px) {
+                    grid-template-columns: repeat(7, 1fr);
+                }
+
+                & figure {
+                    background-color: rgba(112, 112, 112, 0.587);
+                    min-width: 151px;
+                    height: 151px;
+                    border-radius: 0.5rem;
+                    display: grid;
+                    place-items: center;
+                    margin: 0.625rem;
+
+                    @media screen and (min-width: 768px) {
+                        margin: 0;
+                    }
+    
+                    & svg {
+                        width: 40%;
+                    }
+
+                    &:first-child {
+                        margin-left: 0;
+                    }
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+    
