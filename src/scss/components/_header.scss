@@ -182,7 +182,6 @@
   }
 }
 
-
 .hero {
   &-image {
     position: relative;
@@ -191,6 +190,7 @@
     z-index: -10;
 
     @media screen and (min-width: 1200px) {
+      width: 100%;
       height: 100vh;
     }
   }
@@ -206,14 +206,19 @@
     z-index: -1;
 
     @media screen and (min-width: 768px) {
+      width: 90%;
       font-size: 2rem;
     }
 
     @media screen and (min-width: 1200px) {
-      width: 1200px;
+      width: calc(1200px - 1rem);
       left: 50%;
       transform: translate(-50%, -50%);
       margin: 0;
+    }
+
+    @media screen and (min-width: 1440px) {
+      width: 1200px;
     }
 
     & h1 {
