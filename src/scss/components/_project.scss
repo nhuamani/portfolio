@@ -1,0 +1,53 @@
+.project-full {
+    background-color: #101010;
+    margin: 0;
+}
+
+.project {
+    margin: auto;
+    max-width: 1200px;
+    
+    & .card {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+        padding: 0 1rem;
+        
+        @media screen and (min-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+        @media screen and (min-width: 1200px) {
+            padding: 0;
+            gap: 1.5rem;
+        }
+        
+        & article {
+            border-radius: 0.5rem;
+        }
+
+        &-img {
+
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 0.5rem;
+            }
+        }
+
+        &-title {
+            font-family: var(--heading-font);
+            font-size: 1rem;
+            color: #bfc1c9;
+            font-weight: 500;
+            margin: 1rem 0;
+            padding: 0;
+        }
+    }
+
+    & article {
+        background-color: #121715;
+        color: var(--white-color);
+    }
+}
